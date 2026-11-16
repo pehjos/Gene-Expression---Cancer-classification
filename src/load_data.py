@@ -19,7 +19,7 @@ def prepare_folders():
         (ROOT / folder).mkdir(parents=True, exist_ok=True)
 
 def load_data(refresh=False):
-    """Use the requested API on first run; later runs reuse the exact local snapshot."""
+    """Load UCI dataset 401 and reuse the cached snapshot on subsequent runs."""
     prepare_folders()
     cache = ROOT / 'data/raw/uci401.pkl'
     if cache.exists() and not refresh:
@@ -33,9 +33,9 @@ def load_data(refresh=False):
             y = dataset.data.targets
         except Exception as exc:
             # Some UCI entries advertise the API but provide no API data_url.
-            # Use only the official downloadable archive, never synthetic substitutes.
+            # Use the UCI archive if the API request fails.
             api_error = f'{type(exc).__name__}: {exc}'
-            print('Requested API could not load the data:', api_error, flush=True)
+            print('UCI API could not load the data:', api_error, flush=True)
             url = 'https://archive.ics.uci.edu/static/public/401/gene%2Bexpression%2Bcancer%2Brna%2Bseq.zip'
             archive = ROOT / 'data/raw/uci401.zip'
             if not archive.exists():
