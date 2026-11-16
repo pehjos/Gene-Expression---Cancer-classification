@@ -1,0 +1,5 @@
+{
+  "best_model": "Logistic Regression",
+  "criterion": "Highest training-only five-fold mean macro F1; exact ties: Logistic Regression, SVM, Random Forest",
+  "selected_before_test_evaluation": true
+}

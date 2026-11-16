@@ -1,0 +1,14 @@
+{
+  "Logistic Regression": {
+    "after_variance": 20254,
+    "after_anova": 500
+  },
+  "Support Vector Machine": {
+    "after_variance": 20254,
+    "after_anova": 500
+  },
+  "Random Forest": {
+    "after_variance": 20254,
+    "after_anova": 500
+  }
+}

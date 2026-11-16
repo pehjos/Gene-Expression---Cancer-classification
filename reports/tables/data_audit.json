@@ -1,0 +1,15 @@
+{
+  "samples": 801,
+  "features": 20531,
+  "missing_feature_values": 0,
+  "missing_target_values": 0,
+  "duplicate_feature_rows_extra": 0,
+  "class_counts": {
+    "BRCA": 300,
+    "COAD": 78,
+    "KIRC": 146,
+    "LUAD": 141,
+    "PRAD": 136
+  },
+  "majority_minority_ratio": 3.8461538461538463
+}

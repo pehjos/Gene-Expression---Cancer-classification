@@ -1,0 +1,45 @@
+{
+  "BRCA": {
+    "precision": 0.9836065573770492,
+    "recall": 1.0,
+    "f1-score": 0.9917355371900827,
+    "support": 60.0
+  },
+  "COAD": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 16.0
+  },
+  "KIRC": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 30.0
+  },
+  "LUAD": {
+    "precision": 1.0,
+    "recall": 0.9642857142857143,
+    "f1-score": 0.9818181818181818,
+    "support": 28.0
+  },
+  "PRAD": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 27.0
+  },
+  "accuracy": 0.9937888198757764,
+  "macro avg": {
+    "precision": 0.9967213114754099,
+    "recall": 0.9928571428571429,
+    "f1-score": 0.994710743801653,
+    "support": 161.0
+  },
+  "weighted avg": {
+    "precision": 0.9938906425007638,
+    "recall": 0.9937888198757764,
+    "f1-score": 0.993758020635491,
+    "support": 161.0
+  }
+}
